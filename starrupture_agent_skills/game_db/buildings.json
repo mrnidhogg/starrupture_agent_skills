@@ -1,1 +1,8 @@
-[]
+[
+  { "id": "miner_v1", "name": "Miner v1", "category": "extraction", "building_class": "miner", "tier": 1, "speed_multiplier": 1.0 },
+  { "id": "pump_v1", "name": "Oil Pump v1", "category": "extraction", "building_class": "pump", "tier": 1, "speed_multiplier": 1.0 },
+  { "id": "furnace_v1", "name": "Furnace v1", "category": "smelting", "building_class": "furnace", "tier": 1, "speed_multiplier": 1.0 },
+  { "id": "furnace_v2", "name": "Furnace v2", "category": "smelting", "building_class": "furnace", "tier": 2, "speed_multiplier": 1.5 },
+  { "id": "chemical_plant_v1", "name": "Chemical Plant v1", "category": "chemical", "building_class": "chemical_plant", "tier": 1, "speed_multiplier": 1.0 },
+  { "id": "assembler_v1", "name": "Assembler v1", "category": "crafting", "building_class": "assembler", "tier": 1, "speed_multiplier": 1.0 }
+]

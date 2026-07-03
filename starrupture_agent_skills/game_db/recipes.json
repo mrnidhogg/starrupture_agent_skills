@@ -1,1 +1,89 @@
-[]
+[
+  {
+    "id": "copper_ore_mining",
+    "name": "Copper Ore Mining",
+    "building_id": "miner_v1",
+    "time_seconds": 1.0,
+    "inputs": [],
+    "outputs": [{ "item_id": "copper_ore", "amount": 1 }],
+    "recipe_type": "extraction"
+  },
+  {
+    "id": "iron_ore_mining",
+    "name": "Iron Ore Mining",
+    "building_id": "miner_v1",
+    "time_seconds": 1.0,
+    "inputs": [],
+    "outputs": [{ "item_id": "iron_ore", "amount": 1 }],
+    "recipe_type": "extraction"
+  },
+  {
+    "id": "crude_oil_pumping",
+    "name": "Crude Oil Pumping",
+    "building_id": "pump_v1",
+    "time_seconds": 1.0,
+    "inputs": [],
+    "outputs": [{ "item_id": "crude_oil", "amount": 1 }],
+    "recipe_type": "extraction"
+  },
+  {
+    "id": "copper_ingot_smelting",
+    "name": "Copper Ingot",
+    "building_id": "furnace_v1",
+    "time_seconds": 2.0,
+    "inputs": [{ "item_id": "copper_ore", "amount": 2 }],
+    "outputs": [{ "item_id": "copper_ingot", "amount": 1 }],
+    "recipe_type": "smelting"
+  },
+  {
+    "id": "iron_ingot_smelting",
+    "name": "Iron Ingot",
+    "building_id": "furnace_v1",
+    "time_seconds": 2.0,
+    "inputs": [{ "item_id": "iron_ore", "amount": 2 }],
+    "outputs": [{ "item_id": "iron_ingot", "amount": 1 }],
+    "recipe_type": "smelting"
+  },
+  {
+    "id": "copper_wire_drawing",
+    "name": "Copper Wire",
+    "building_id": "assembler_v1",
+    "time_seconds": 1.0,
+    "inputs": [{ "item_id": "copper_ingot", "amount": 1 }],
+    "outputs": [{ "item_id": "copper_wire", "amount": 2 }],
+    "recipe_type": "crafting"
+  },
+  {
+    "id": "plastic_synthesis",
+    "name": "Plastic",
+    "building_id": "chemical_plant_v1",
+    "time_seconds": 3.0,
+    "inputs": [{ "item_id": "crude_oil", "amount": 3 }],
+    "outputs": [{ "item_id": "plastic", "amount": 2 }],
+    "recipe_type": "chemical"
+  },
+  {
+    "id": "circuit_board_assembly",
+    "name": "Circuit Board",
+    "building_id": "assembler_v1",
+    "time_seconds": 4.0,
+    "inputs": [
+      { "item_id": "copper_wire", "amount": 3 },
+      { "item_id": "plastic", "amount": 1 }
+    ],
+    "outputs": [{ "item_id": "circuit_board", "amount": 1 }],
+    "recipe_type": "assembly"
+  },
+  {
+    "id": "battery_assembly",
+    "name": "Battery",
+    "building_id": "assembler_v1",
+    "time_seconds": 5.0,
+    "inputs": [
+      { "item_id": "copper_ingot", "amount": 2 },
+      { "item_id": "plastic", "amount": 1 }
+    ],
+    "outputs": [{ "item_id": "battery", "amount": 1 }],
+    "recipe_type": "assembly"
+  }
+]

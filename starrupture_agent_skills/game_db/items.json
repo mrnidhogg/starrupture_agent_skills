@@ -1,1 +1,13 @@
-[]
+[
+  { "id": "copper_ore", "name": "Copper Ore", "category": "raw", "is_raw_resource": true },
+  { "id": "iron_ore", "name": "Iron Ore", "category": "raw", "is_raw_resource": true },
+  { "id": "crude_oil", "name": "Crude Oil", "category": "raw", "is_raw_resource": true },
+
+  { "id": "copper_ingot", "name": "Copper Ingot", "category": "intermediate", "is_raw_resource": false },
+  { "id": "iron_ingot", "name": "Iron Ingot", "category": "intermediate", "is_raw_resource": false },
+  { "id": "copper_wire", "name": "Copper Wire", "category": "intermediate", "is_raw_resource": false },
+  { "id": "plastic", "name": "Plastic", "category": "intermediate", "is_raw_resource": false },
+  { "id": "circuit_board", "name": "Circuit Board", "category": "intermediate", "is_raw_resource": false },
+
+  { "id": "battery", "name": "Battery", "category": "final", "is_raw_resource": false }
+]
