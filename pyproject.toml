@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starrupture-agent-skills"
+version = "0.0.1"
+description = "StarRupture 工厂产线规划 Agent —— 以 Python 为核心、通过 MCP 暴露技能的本地规划助手。"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [{ name = "mrnidhogg" }]
+keywords = ["starrupture", "factory", "planner", "mcp", "agent"]
+
+dependencies = [
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "typer>=0.12",
+    "sqlalchemy>=2.0",
+    "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+starrupture = "starrupture_agent_skills.cli.main:run"
+
+[tool.setuptools.packages.find]
+include = ["starrupture_agent_skills*"]
+
+[tool.setuptools.package-data]
+"starrupture_agent_skills.game_db" = ["*.json"]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra"
